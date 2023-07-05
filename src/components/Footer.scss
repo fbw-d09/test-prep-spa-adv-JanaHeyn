@@ -5,13 +5,13 @@
     align-items: center;
     justify-content: center;
 
-    &dark
+    &.dark
     {
         background-color: black;
         color: black;
     }
 
-    &light
+    &.light
     {
         background-color: lightgray;
     }

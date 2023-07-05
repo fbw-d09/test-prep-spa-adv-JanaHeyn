@@ -4,7 +4,6 @@ import { ThemeContext } from './ThemeContext';
 import Header from './components/Header';
 import Card from './components/Card';
 import Footer from './components/Footer';
-import LightSwitch from './components/LightSwitch';
 
 import './App.scss'
 
@@ -50,7 +49,7 @@ function App() {
       <ThemeContext.Provider value={ value }>
         <div className='App'>
             <Header/>
-            <LightSwitch />
+            <button onClick={toggleDarkMode}>Switch mode</button>
             <Card country={country}/>
             <Footer/>
         </div>
