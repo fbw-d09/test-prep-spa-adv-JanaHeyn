@@ -19,7 +19,7 @@ function App() {
 
   const country = {
     name: "South Africa",
-    img: "https://de.wikipedia.org/wiki/Datei:Flag_of_South_Africa.svg",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/1599px-Flag_of_South_Africa.svg.png",
     capital: "Pretoria",
     largestCity: "Johannesburg",
     population: 58048332,

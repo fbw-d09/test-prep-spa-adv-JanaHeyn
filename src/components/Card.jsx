@@ -10,7 +10,7 @@ const Card = ({ country }) => {
     return (
         <div className={`Card ${darkMode ? 'dark' : 'light'}`}>
             <h2>{country.name}</h2>
-            {/* <img>{country.img}</img> */}
+            <img src={country.img} alt='sa-flag' />
             <div className="Card__infos">
                 <p>Capital: {country.capital}</p>
                 <p>Largest City: {country.largestCity}</p>

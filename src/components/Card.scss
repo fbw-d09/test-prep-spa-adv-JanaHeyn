@@ -6,6 +6,12 @@
     padding-top: 1rem;
     // border: 2px solid red;
 
+    & img
+    {
+        width: 20%;
+        margin-top: 0.8rem;
+    }
+
     &.dark
     {
         background-color: black;
