@@ -1,0 +1,18 @@
+.Header 
+{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dark
+    {
+        background-color: black;
+        color: white;
+    }
+
+    .light
+    {
+        background-color: lightgray;
+    }
+}

@@ -1,10 +1,22 @@
+import React, { useState } from 'react';
+import { ThemeContext } from './ThemeContext';
+
 import Header from './components/Header';
 import Card from './components/Card';
 import Footer from './components/Footer';
-import './App.css'
+import LightSwitch from './components/LightSwitch';
+
+import './App.scss'
 
 function App() {
 
+  const [ darkMode, setDarkMode ] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+};
+
+  const value = { darkMode, toggleDarkMode }
 
   const country = {
     name: "South Africa",
@@ -33,15 +45,16 @@ function App() {
                           ],
   };
 
-
-
   return (
     <>
-      <div className='App'>
-          <Header/>
-          <Card/>
-          <Footer/>
-      </div>
+      <ThemeContext.Provider value={ value }>
+        <div className='App'>
+            <Header/>
+            <LightSwitch />
+            <Card country={country}/>
+            <Footer/>
+        </div>
+      </ThemeContext.Provider>
     </>
   )
 }

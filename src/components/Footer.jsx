@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { ThemeContext } from '../ThemeContext';
+import './Footer.scss';
 
 
 const Footer = () => {
-  return (
-    <div className='Footer'>
-        <p> &copy; 2023 405Found</p>
-       
-    </div>
-  )
+    const { darkMode } = useContext(ThemeContext);
+
+    return (
+        <div className={`Footer ${darkMode ? 'dark' : 'light'}`}>
+            <p> &copy; 2023 405Found</p>
+      
+        </div>
+    )
 }
 
 export default Footer

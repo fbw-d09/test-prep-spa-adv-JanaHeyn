@@ -1,0 +1,44 @@
+.Card {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    // border: 2px solid red;
+
+    &dark
+    {
+        background-color: black;
+        color: white;
+    }
+
+    &light
+    {
+        background-color: white;
+        color: black;
+    }
+
+    &__infos
+    {
+        margin: 0.8rem 0;
+        text-align: center;
+        // border: 2px solid red;
+    }
+    
+    &__lists
+    {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        // border: 2px solid red;
+
+        & ul
+        {   
+            margin-top: 0.8rem;
+            list-style-type: none;
+        }
+    
+    }
+
+}
